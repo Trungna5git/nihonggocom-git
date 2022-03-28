@@ -1,5 +1,5 @@
 CREATE TABLE `t_user_favorite_job` (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '??id',
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '??id',
   `job_cd` int NOT NULL COMMENT '??ID',
   `sort` int DEFAULT '1' COMMENT '??',
   `delete_flag` tinyint(1) DEFAULT '0' COMMENT '?????',
