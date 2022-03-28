@@ -1,0 +1,9 @@
+job/joblist (UI)
+
+mypage ISAMEmber (tab job yeu thich)
+
+jobview
+
+learningprocess.cshtml
+
+list<jobmodel>
