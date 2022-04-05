@@ -4,12 +4,12 @@ CREATE TABLE `t_memo` (
   `content` blob COMMENT 'content:content of memo',
   `is_done` tinyint(1) DEFAULT '0' COMMENT 'is_done:status of memo',
   `background_color` varchar(50) DEFAULT NULL COMMENT 'background_color:background_color of memo',
-  `sort` int DEFAULT '1' COMMENT '??',
-  `delete_flag` tinyint(1) DEFAULT '0' COMMENT '?????',
-  `registered_id` bigint DEFAULT NULL COMMENT '???id:??id',
-  `registered_datetime` datetime DEFAULT NULL COMMENT '????',
-  `changed_id` bigint DEFAULT NULL COMMENT '???id',
-  `changed_datetime` datetime DEFAULT NULL COMMENT '????',
+  `sort` int DEFAULT '1' COMMENT '順番',
+  `delete_flag` tinyint(1) DEFAULT '0' COMMENT '削除フラグ',
+  `registered_id` bigint DEFAULT NULL COMMENT '登録者id:会員id',
+  `registered_datetime` datetime DEFAULT NULL COMMENT '登録日時',
+  `changed_id` bigint DEFAULT NULL COMMENT '更新者id',
+  `changed_datetime` datetime DEFAULT NULL COMMENT '更新日時',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=161 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Information memo'
 
