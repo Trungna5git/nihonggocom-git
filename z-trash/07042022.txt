@@ -1,0 +1,64 @@
+
+
+select A.course_cd, A.level_cd_count, case when B.course_cd > 0 then 1 else 0 end as done_status
+from (
+    select A.course_cd, count(A.level_cd) as level_cd_count
+    from (
+        select ll.course_cd, ls.level_cd
+        from m_user u
+        inner join t_lesson_schedule ls on ls.member_id = u.id
+        inner join m_lesson_level ll on ll.level_cd = ls.level_cd
+        where u.mail_address = 'y.kimoto.ge+501@gmail.com'
+              and ls.schedule_states_cd = 3
+        group by ll.course_cd, ls.level_cd
+        order by ll.course_cd, ls.level_cd
+    ) A
+    group by A.course_cd
+    order by A.course_cd
+) A
+left join (
+            select course_cd, count(level_cd) as level_cd_count
+            from m_lesson_level
+            group by course_cd
+            order by course_cd
+        ) B on B.course_cd = A.course_cd and B.level_cd_count = A.level_cd_count
+        
+        
+select A.course_cd, A.level_cd_count, case when B.course_cd > 0 then 1 else 0 end as done_status
+from (
+    select A.course_cd, count(A.level_cd) as level_cd_count
+    from (
+        select ll.course_cd, ls.level_cd
+        from m_user u
+        inner join t_lesson_schedule ls on ls.member_id = u.id
+        inner join m_lesson_level ll on ll.level_cd = ls.level_cd
+        where u.mail_address = 'y.kimoto.ge+501@gmail.com'
+              and ls.schedule_states_cd = 3
+        group by ll.course_cd, ls.level_cd
+    ) A
+    group by A.course_cd
+) A
+left join (
+            select course_cd, count(level_cd) as level_cd_count
+            from m_lesson_level
+            group by course_cd
+        ) B on B.course_cd = A.course_cd and B.level_cd_count = A.level_cd_count        
+        
+
+select course_cd, count(level_cd) as level_cd_count
+from m_lesson_level
+group by course_cd
+order by course_cd;
+
+select *
+from m_lesson_level
+where level_cd = 3;
+
+select *
+from m_lesson_course;
+
+
+select u.mail_address, ls.*
+from m_user u
+inner join t_lesson_schedule ls on ls.instructor_id = u.id
+limit 100;
