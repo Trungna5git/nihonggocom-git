@@ -88,3 +88,31 @@ inner join (
 select *
 from m_lesson_course
 
+=======
+
+
+select A.*, B.Count_Unfinished
+from (
+        select mu.id, mu.nickname, count(distinct a.material_cd) as Count_Total
+        from  m_user mu
+        inner join t_lesson_schedule b on b.schedule_states_cd =3 and b.member_id = mu.id
+        inner join m_lesson_contents a on a.level_cd=b.level_cd and a.group_cd = 1
+        where mu.user_class_cd = 2 and mu.user_status_cd = 2
+        group by mu.id
+)A
+left join (
+            select mu.id, mu.nickname, count(distinct a.material_cd) as Count_Unfinished
+            from m_user mu
+            inner join t_lesson_schedule b on b.schedule_states_cd = 3 and b.member_id = mu.id
+            inner join m_lesson_contents a on a.level_cd=b.level_cd and a.group_cd=1
+            left join m_lesson_level mlt on a.material_cd=mlt.level_cd and a.type_cd=0
+            left join m_lesson_read_title mlr on a.material_cd=mlr.read_cd and a.type_cd=3
+            left join m_lesson_words_title mlw on a.material_cd = mlw.word_cd and a.type_cd=1
+            left join m_lesson_video mlv on a.material_cd = mlv.id and a.type_cd=2
+            left join m_practice_test_title p on p.practice_test_cd = a.material_cd and a.type_cd=4
+            left join t_test_history c on mu.id=c.user_id and c.registered_datetime >= b.scheduled_datetime
+                        and (c.level_cd=mlt.level_cd or c.level_cd=mlw.word_cd or c.level_cd=mlv.id or c.read_cd=mlr.read_cd or c.practice_test_cd = p.practice_test_cd)
+            where mu.user_class_cd = 2 and mu.user_status_cd = 2 and c.test_id is null
+            group by mu.id
+        )B on B.id = A.id
+
