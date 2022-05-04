@@ -1,0 +1,31 @@
+
+--Check web + responsive in web
+-Danh sách giáo viên: oke
+
+-Chi tiết giáo viên:
+	+ //Note write: (*)Giảm margin của class divider (24 -> 12). margin: 0 12px
+	
+-Thông tin giáo viên(teacher-info):
+	+ (*)Responsive: Giảm font-size chữ cho phù hợp với thiết bị di động (cả title lẫn text)(class: miir-title, miir-text)
+	+ (.)Popup xem bằng cấp của giáo viên
+	
+-Thay đổi thông tin thành viên(teacher-profile-update): OKE
+
+-Teacher (Trang của tôi): 
+	+ (*)Bổ sung hover cho các button (open, close, reserved) trong Hẹn lịch giảng:
+		.ex: transform:scale(1.1);
+	+ (.)Padding các popup trong Teacher(Trang của tôi) bé hơn so với giao diện trong figma -> Tăng padding popup left right
+	
+-Teaching content - (fm: Nội dung buổi học theo chương trình)
+	+ (.)Tăng thêm khoảng cách giữa box title với content bên dưới:
+		.ex: khoảng cách giữa Nội dung bài học với Từ vựng
+		.ex: margin-bottom: 16px
+		
+-Teaching history - (fm: Lịch sử buổi học): OKE
+
+-Teaching report program - (fm: Báo cáo kết quả kết thúc buổi học chương trình - Giáo viên):
+	+ (.)UI trên herokuapp thiếu div Tình trạng bài tập về nhà
+	
+-Teaching report - (fm: Báo cáo kết quả kết thúc buổi học tự do - Giáo viên): OKE
+
+(*): Đề xuất

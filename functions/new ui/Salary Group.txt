@@ -1,0 +1,4 @@
+--Check web + responsive in web
+-Salary (Lịch sử lương):
+	+ (.)Tăng padding(top-bottom) title (Giống với figma)
+	+ Responsive: Yêu cầu xem dữ liệu dạng table với thiết bị di động (hiện tại đang hiển thị dữ liệu dạng từng div khác nhau)
