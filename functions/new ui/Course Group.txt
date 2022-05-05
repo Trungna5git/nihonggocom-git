@@ -1,0 +1,31 @@
+--Check web + responsive in web
+-Hội thoại (course-conversation.html): 
+	+ (.) collapse (collapse-icon) Level list bên trái chưa sử dụng được
+-Luyện nghe (course-grammar-listen.html): OKE
+-Ngữ pháp (course-grammar.html): 
+	+ (.) Cho button XÁC NHẬN HIỆU QUẢ, CHẤM ĐIỂM vào trong div (có background color màu trắng)
+	+ (.) Đề xuất xem lại list header bên trên design giống với giao diện web, mobile: thanh location có dấu checked icon nằm bên trái, text header align left (h1: mobile; h2: web)
+-Đọc hiểu (course-reading.html): OKE
+	
+-Đặt lịch học - Chọn ngày (course-booking.html):
+	+ (.) nút quay lại và icon back để màu xám, khi nào hover vào thì mới để màu vàng
+	+ Mobile: Giảm margin bottom của course-booking__intro
+	+ Mobile: label Chọn múi giờ và combobox chọn múi giờ -> canh giữa so với title bên trên
+	+ Title (Đặt lịch khóa học) chưa ngay giữa (center)
+	
+-Khóa học (intro-course): OKE
+
+-Từ vựng (course-vocabulary.html): OKE
+
+-Hỏi đáp - học viên - Câu hỏi đã đăng (qa.html): OKE
+
+-Tuyển dụng (recruit.html): OKE
+
+-Đăng nhập (login.html): OKE
+	+ (.) Không tìm thấy div thông báo Đăng nhập không thành công
+-Đăng ký (signup.html): OKE
+
+-Quên mật khẩu (forgot-password.html): OKE
+
+-Đổi mật khẩu (reset-password.html): OKE
+	+ (.) Mobile: Modal thông báo bị thô (làm nhỏ gọn vừa với điện thoại or bỏ nền trắng): Đổi mật khẩu thành công (hình sheet ScreenShow h1), Đăng ký tài khoản thành công(hình sheet ScreenShow h2).
