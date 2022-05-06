@@ -1,0 +1,6 @@
+--Check web + responsive in web
+-Mua điểm (buy-point.html) OKE
+-Mua điểm chi tiết (buy-point-detail.html) OKE
+-Lịch sử điểm (point-history.html)
+	+ Mobile: Giao diện không cân đối, xấu(Chổ div số dư điểm)(Hình ảnh sheet ScreenShot: h8)
+	+ Mobile: Cho phân trang cân đối (khoảng cách với lề trái bằng với khoảng cách với lề phải, giữ nguyễn khoảng cách với lề phải) (Hình ảnh sheet ScreenShot: h9)
