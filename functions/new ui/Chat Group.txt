@@ -1,0 +1,3 @@
+--Check web + responsive in web
+-Chat(chat.html)
+	+(.)Mobile Đề xuất cho hình ảnh đại diện tin nhắn đến nằm thẳng bên dưới hình ảnh đại diện tên nhóm (như web)

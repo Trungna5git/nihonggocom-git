@@ -1,0 +1,24 @@
+--Check web + responsive in web
+-Lịch sử khóa học(lesson-history.html)
+	+(.)Mobile: Chỉnh responsive giá trị trong cột Cấp độ cho hợp lý(Hình ảnh sheet ScreenShot: h10)
+-Lịch sử buổi học(lesson-schedule.html)
+	+(.)Mobile: Chỉnh responsive giá trị trong cột Cấp độ cho hợp lý(Hình ảnh sheet ScreenShot: h10)
+-Lịch sử kiểm tra(lesson-test.html)
+	+(.)Mobile: Table thiếu responsive
+-Báo cáo kết quả kết thúc buổi học tự do - Học viên(lesson-report-free.html)
+	+(.)Thiếu hr ngang mờ ngăn giữa Đánh giá của bạn về Giáo viên và Gửi tin nhắn cho Giáo viên
+	+(.)Mobile: Giảm khoảng cách giữa các div (content)
+-Báo cáo kết quả kết thúc buổi học theo ctr - Học viên(lesson-report-free.html)
+	+(.)Bỏ background-color của input Nhập tin nhắn của bạn...
+	+(.)Nội dung bài giảng thiếu button Xem thêm
+	+(.)Thiếu hr ngang mờ ngăn giữa Đánh giá của bạn về Giáo viên và Gửi tin nhắn cho Giáo viên
+	+(.)Mobile: Giảm khoảng cách giữa các div (content)
+-Đánh giá năng lực(jot-test.html)
+	+(.)Đề xuất xem lại list header bên trên design giống với giao diện web, mobile: thanh location có dấu checked icon nằm bên trái, text header align left (h1: mobile; h2: web)\
+	+(.)Phần thi thứ 2, Phần thi thứ 3: Button tiếp theo thứ 2 (Chung trang với button Dừng ghi âm) đang hover màu xanh ( -> Chuyển sang màu cam)
+	+(.)Mobile Các button Bắt đầu ghi âm, Dừng ghi âm, Tiếp theo: Canh giữa (center)
+-Tin tức - Cat(news.html)
+	+(.)List Header thiếu thanh location có dấu checked icon
+-Tin tức - Cat lọc theo tag / search(news-search.html)
+	+(.)List Header thiếu thanh location có dấu checked icon
+-Tin tức - Chi tiết (news-detail.html) OKE
