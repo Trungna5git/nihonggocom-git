@@ -1,0 +1,14 @@
+--Check web + responsive in web
+-Về chúng tôi(other-page-about.html) 
+	+(.) Thiếu title chính (Sơ lược về ⽇本語.COM)
+	+(.) Tăng khoảng cách giữa div Về xếp hạng JOT với div bên dưới
+	+(.) Chỉnh sửa div Tìm việc tiếng Nhật giống với hình ảnh(Màu sắc, khoảng cách với footer)(Hình ảnh sheet ScreenShot: h11)
+	+(.) Mobile: Thiếu hình ảnh đi kèm với các div (Học kèm 1 với 1 với giáo viên người Nhật, Học tiếng Nhật dành cho công việc, ...)
+	+(.) Mobile: div Về xếp hạng JOT: Giảm khoảng cách của title với hr mờ ngang bên dưới
+-Liên hệ(other-page-contact.html) OKE
+-Khái lược kinh doanh(other-page-intro.html)
+	+(.) Mobile: Tăng khoảng cách (margin bottom) giữa các div(Giới thiệu việc làm, Tư vấn đầu tư nước ngoài, Đào tạo tiếng Nhật) để không bị để icon
+-Câu hỏi thường gặp(other-page-qa.html)
+	+(.) Mobile: Đề xuất cho title bên trên content bên dưới (không hiển thị như hiện tại) (trên: Người phát hành; dưới: Công ty cổ phần Ge partners)
+-Chính sách bảo mật(other-page-security.html) OKE
+-Hướng dẫn sử dụng (other-page-guide.html) OKE

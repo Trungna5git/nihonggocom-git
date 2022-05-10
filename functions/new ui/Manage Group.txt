@@ -1,0 +1,11 @@
+--Check web + responsive in web
+-Thêm thành viên(manage-add-member.html) OKE
+-Tình trạng học tập - Tài liệu giảng dạy(manage-document.html)
+	+(.) Mobile: Đề xuất nên bổ sung thêm 2 button prev next cho các Table responsive(sử dụng song song với thanh scroll ngang của table)
+	+(.) Đề xuất xem lại list header bên trên design giống với giao diện web, 
+mobile: thanh location có dấu checked icon nằm bên trái, text header align left (Hình ảnh sheet ScreenShot: h1: mobile; h2: web)
+-Danh sách thành viên(manage-list.html) OKE
+-Trang của tôi - Học viên công ty - Thống kê(manage-report.html) OKE
+-Tình trạng học tập - Buổi học(manage-status-lesson.html) 
+	+(.) Giảm khoảng cách (margin) giữa div chứa Từ ngày với div chứa Buổi học
+	+(.) Mobile: DatePicker của Từ ngày và Đến ngày chưa đều (Căn chiều dọc)
